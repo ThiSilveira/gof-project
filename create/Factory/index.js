@@ -4,9 +4,7 @@ init();
 
 function init() {
     let person = { name: 'Flávio Almeida', idade: 18, sexo: "Masculino" };
-    // não precisou criar a instância
-
-    person = ProxyFactory.createProxy(person);
-    console.log(person)
-    console.log(person.idade); // exibe também a mensagem do proxy
+    
+    person = ProxyFactory.createProxy(person); //Não precisou criar a instância
+    console.log(person.idade); //Exibe também a mensagem do proxy
 }
