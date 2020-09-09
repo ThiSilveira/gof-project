@@ -14,6 +14,8 @@ class Logger {
     }
 }
 
+
+//Singleton - Garante que uma determinada classe tenha uma, e somente uma instância, mantendo um ponto global de acesso para a mesma. Quando quero ter somente uma instancia de um objeto dentro da minha aplicação.
 class Singleton {
     constructor() {
         if(!Singleton.instance) {

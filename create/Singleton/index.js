@@ -1,6 +1,6 @@
-var Logger = require('./Logger');
-var Shopper = require('./Shopper');
-var Store = require('./Store');
+var Logger = require('./logger');
+var Shopper = require('./shopper');
+var Store = require('./store');
 
 var logger = new Logger().getInstance();
 
