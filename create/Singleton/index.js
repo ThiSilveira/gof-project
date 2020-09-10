@@ -1,26 +1,12 @@
-var Logger = require('./logger');
-var Shopper = require('./shopper');
-var Store = require('./store');
+//The Singleton Pattern limits the number of instances of a particular object to just one. This single instance is called the singleton.
 
-var logger = new Logger().getInstance();
+const Singleton = require('./singleton')
 
-logger.log('starting app...');
+init();
 
-var alex = new Shopper('alex', 500)
-var ski_shop = new Store('Steep and Deep Supplies', [
-    {
-        item: 'Downhill Skis',
-        qty: 5,
-        price: 750
-    },
-    {
-        item: 'Knit Hat',
-        qty: 20,
-        price: 5
-    }
-])
+function init() {
+    const instance1 = Singleton.getInstance();
+    const instance2 = Singleton.getInstance();
 
-logger.log('finished config...');
-
-console.log(`${logger.count} logs total`);
-logger.logs.map(log => console.log(`   ${log.message}`));
+    console.log("Same instance? " + (instance1 === instance2));
+}
