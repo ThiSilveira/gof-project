@@ -1,4 +1,4 @@
-const Log = require('./log')
+const Log = require('../../log')
 
 function Factory() {
     this.createEmployee = function (type) {
@@ -24,19 +24,19 @@ function Factory() {
     }
 }
 
-var FullTime = function () {
+const FullTime = function () {
     this.hourly = "R$ 12,00";
 };
 
-var PartTime = function () {
+const PartTime = function () {
     this.hourly = "R$ 11,00";
 };
 
-var Temporary = function () {
+const Temporary = function () {
     this.hourly = "R$ 10,00";
 };
 
-var Contractor = function () {
+const Contractor = function () {
     this.hourly = "R$ 15,00";
 };
 

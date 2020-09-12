@@ -1,7 +1,7 @@
 const Shop = require('./shop');
 const CarBuilder = require('./carBuilder');
 const TruckBuilder = require('./truckBuilder');
-const Log = require('./log');
+const Log = require('../../log');
 
 init();
 

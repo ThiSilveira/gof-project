@@ -1,4 +1,4 @@
-const Log = require('./log')
+const Log = require('../../log')
 
 function Employee(name) {
     this.name = name;
